@@ -121,7 +121,7 @@ void loop() {
       Serial.println("WiFi Connected");
       http.begin(client, serverName);
       http.addHeader("Content-Type", "application/json");
-      DynamicJsonDocument json(150);
+      DynamicJsonDocument json(200);
       Serial.println(i);
       json["sensorId"] = sensorId;
       json["Fecha"] = dateReadings[i - 1];  //
