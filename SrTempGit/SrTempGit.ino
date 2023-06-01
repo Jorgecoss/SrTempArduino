@@ -27,11 +27,11 @@ const char* password = "CASACOSS21";
 //const char* ssid = "LGHH";
 //const char* password = "zebr@123";
 
-const char* sensorId = "1234567891";
+const char* sensorId = "18111";
 const char* serverName = "http://200.94.111.227:8530/API/sensor";
 //const char* serverName = "http://192.168.0.4:8530/API/sensor";  //produccion
 unsigned long lastTime = 0;
-unsigned long timerDelay = 3000;  //30000 30 seg  Cada cuanto se va a leer el sensor 300000 5 min
+unsigned long timerDelay = 6000;  //30000 30 seg  Cada cuanto se va a leer el sensor 300000 5 min
 
 
 OneWire oneWire(ONE_WIRE_BUS);
@@ -56,7 +56,7 @@ void setup() {
   WiFi.begin(ssid, password);
   Serial.print("Conectando a la red Wi-Fi...");
   delay(1000);
-  setTime(11, 20, 00, 21, 4, 2022);
+  setTime(12, 55, 00, 21, 4, 2022);
 }
 
 void loop() {
